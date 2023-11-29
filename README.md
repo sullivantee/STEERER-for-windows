@@ -1,3 +1,4 @@
+# 
 # STEERER for Object Counting and Localizaiotion (ICCV 2023)
 ## Introduction
 This is the official PyTorch implementation of paper: [**STEERER: Resolving Scale Variations for Counting and Localization via Selective Inheritance Learning**](https://arxiv.org/abs/2308.10468), which effectively addressed the issue of scale variations for object counting and localizaioion, demonstrating the state-of-arts counting and localizaiton performance for different catagories, such as crowd,vehicle, crops and trees ![framework](./figures/framework.png). 
@@ -12,20 +13,15 @@ This is the official PyTorch implementation of paper: [**STEERER: Resolving Scal
 
 ## preparation 
 
-- **Clone this repo** in the directory (```root/```):
+- **Download this repo** in the directory (```folder/```):
 
-
-```bash
-cd $root
-git clone https://github.com/taohan10200/STEERER.git
-```
 - **Install dependencies.** We use python 3.9 and pytorch >= 1.12.0 : http://pytorch.org.
 
 ```bash
 conda create -n STEERER python=3.9 -y
 conda activate STEERER
 conda install pytorch==1.12.0 torchvision==0.13.0 cudatoolkit=11.3 -c pytorch
-cd ${STEERER}
+cd folder\STEERER
 pip install -r requirements.txt
 ```
 
@@ -41,19 +37,23 @@ pip install -r requirements.txt
   │   │   ├── train.txt   # the image name of train set 
   │   │   ├── test.txt    # the image name of test set
   │   │   ├── test_gt_loc.txt  # the localization labels for evaluation
-  │   │   └──train_gt_loc.txt  # the localization labels for train set (not used)
+  │   │   └── train_gt_loc.txt  # the localization labels for train set (not used)
   │   ├── SHHA
   │   ├── NWPU
   │   ├── QNRF
   │   ├── JHU
   │   ├── MTC
   │   ├── JHU
-  │   ├── JHUTRANCOS_v3
+  │   ├── TRANCOS_v3
   │   └── TREE
   ├── PretrainedModels
   └── STEERER
 
 ````
+
+## Run .sh file on Windows
+1) Install Git.
+2) Go to C:\Program Files\Git\bin\ run ```sh.exe```
 
 ## Training
 we provide simplify script to run distributed or cluster training,
