@@ -21,7 +21,7 @@ This is the official PyTorch implementation of paper: [**STEERER: Resolving Scal
 conda create -n STEERER python=3.9 -y
 conda activate STEERER
 conda install pytorch==1.12.0 torchvision==0.13.0 cudatoolkit=11.3 -c pytorch
-cd folder\STEERER
+cd folder\STEERER-main
 pip install -r requirements.txt
 ```
 
