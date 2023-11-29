@@ -19,7 +19,7 @@ for ((i=0; i<${#GPUS_ID}; i++)); do
     fi
 done
 
-# Depend on your conda version, some activate may be located at
+# Depend on your conda version, some activate.exe may be located at
 # ~anaconda3/bin/activate
 # switch it up, if you feel the need to
 source ~/anaconda3/Scripts/activate STEERER
