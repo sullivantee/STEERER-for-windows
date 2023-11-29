@@ -20,9 +20,9 @@ for ((i=0; i<${#GPUS_ID}; i++)); do
 done
 
 # Depend on your conda version, some activate may be located at
-# ~anaconda3/Scripts/activate
+# ~anaconda3/bin/activate
 # switch it up, if you feel the need to
-source ~/anaconda3/bin/activate STEERER
+source ~/anaconda3/Scripts/activate STEERER
 
 echo "export CUDA_VISIBLE_DEVICES=$GPUS_ID"
 export CUDA_VISIBLE_DEVICES=${GPUS_ID:-"0"}
