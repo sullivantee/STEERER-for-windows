@@ -1,3 +1,4 @@
+# I didn't ran on multiple gpus, so I am unable to confirm this works on Windows ¯\_(ツ)_/¯
 #!/usr/bin/env bash
 
 # set -x
